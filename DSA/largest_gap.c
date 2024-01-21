@@ -31,5 +31,5 @@ int main(){
             gap = diff[i];
         }
     }
-    printf("\n Largest gap: %d", gap);
+    printf("\n Largest gap: %d\n", gap);
 }

@@ -12,11 +12,11 @@ int main(){
     for(int i=0; i<size; i++){
         for(int j=0; j<size; j++){
             if(arr[i]+arr[j]==sum){
-                printf("\n The pairs (%d, %d) has the sum %d", arr[i], arr[j], sum);
+                printf("\n The pairs (%d, %d) has the sum %d\n", arr[i], arr[j], sum);
                 no = 1;
             }
         }
     }
     if(!no)
-        printf("\n 0");
+        printf("\n 0\n");
 }

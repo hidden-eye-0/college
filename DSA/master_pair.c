@@ -22,6 +22,6 @@ int main(){
             }
         }
     }
-    printf("\n The master pair is (%d, %d) with a sum of %d", x+1, y+1, max);
+    printf("\n The master pair is (%d, %d) with a sum of %d\n", arr[x], arr[y], max);
 
 }

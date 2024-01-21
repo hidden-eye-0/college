@@ -1,25 +1,24 @@
-#include<stdio.h>
-int main(){
-    int start, end, prime, n=0, gap;
-    printf("\n Enter the range: ");
-    scanf("%d %d",&start, &end);
-    int prime_store[end];
-    for(int i=start;i<end;i++){
-        if(i%2==0 || i==1)
-            prime = 0;
-        else{
-            for(int j=3;j<i;j++){
-                if(i%j==0){
-                    prime = 0;
-                    break;
-                }
-                else 
-                    prime = 1;
-            }
-            if(prime){
-                prime_store[n] = i;
-                n++;
-            }
+#include <stdio.h>
+int main() {
+    int m, n;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &m, &n);
+    
+    int num = 1;
+    
+    for (int i = 2; i <= m && i <= n; i++) {
+        if (m % i == 0 && n % i == 0) {
+            num = i;
+            break;
         }
     }
+    
+    if (num == 1) {
+        printf("%d and %d are relatively prime.\n", m, n);
+    } else {
+        printf("%d and %d are coprime.\n", m, n);
+    }
+    
+    return 0;
 }

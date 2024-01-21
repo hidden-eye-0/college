@@ -14,7 +14,7 @@ int main(){
             seq = 0;
     }
     if(seq)
-        printf("\n The given array is in perfect sequence");
+        printf("\n The given array is in perfect sequence\n");
     else
-        printf("\n The given array is not in perfect sequence");
+        printf("\n The given array is not in perfect sequence\n");
 }

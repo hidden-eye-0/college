@@ -15,5 +15,5 @@ int main(){
         if(min>arr[i])
             min = arr[i];
     }
-    printf("\n The difference between maximum and the minimum is %d", max-min);
+    printf("\n The difference between maximum and the minimum is %d\n", max-min);
 }

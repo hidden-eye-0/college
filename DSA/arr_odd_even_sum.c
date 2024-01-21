@@ -13,5 +13,5 @@ int main(){
             odd_sum = odd_sum + arr[i];
     }
     printf("\n Odd sum: %d", odd_sum);
-    printf("\n Even sum: %d", even_sum);
+    printf("\n Even sum: %d\n", even_sum);
 }

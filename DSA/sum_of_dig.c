@@ -9,5 +9,5 @@ int main(){
         num /= 10;
     }
 
-    printf("\n Sum of the digits is %d", sum);
+    printf("\n Sum of the digits is %d\n", sum);
 }
