@@ -6,8 +6,9 @@ int main() {
     scanf("%d %d", &rows1, &cols1);
     printf("Enter the number of rows and columns for the second matrix: ");
     scanf("%d %d", &rows2, &cols2);
+
     if (cols1 != rows2) {
-        printf("Matrix multiplication is not possible. Number of columns in the first matrix must be equal to the number of rows in the second matrix.\n");
+        printf("Matrix multiplication is not possible.\n");
         return 1;
     }
 
@@ -38,7 +39,7 @@ int main() {
         }
     }
 
-    printf("Result of matrix multiplication:\n\t\t");
+    printf("Result \n\t\t");
     for (int i = 0; i < rows1; i++) {
         for (int j = 0; j < cols2; j++) {
             printf("%d ", result[i][j]);
