@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-#define max 5
+#define max 50
 
 int top = -1;
 int stack[max];
@@ -24,17 +24,17 @@ int main(){
     printf("\n Enter the expression: ");
     scanf("%s", arr);
 
-    for(int i=0;i<strlen(arr);i++){
+    for(int i=0;arr[i]!='\0';i++){
         if(arr[i]=='{' || arr[i]=='[' || arr[i]=='(')
             push(arr[i]);
         else if(arr[i]=='}' || arr[i]==']' || arr[i]==')'){
-            if(arr[i]=='}' && stack[--top]=='{')
+            if(arr[i]=='}' && stack[top]=='{')
                 pop();
-            else if(arr[i]==']' && stack[--top]=='[')
+            else if(arr[i]==']' && stack[top]=='[')
                 pop();
-            else if(arr[i]==')' && stack[--top]==')')
+            else if(arr[i]==')' && stack[top]=='(')
                 pop();
-        }
+        } 
     }
     if(top<0)
         printf("Balanced!");
