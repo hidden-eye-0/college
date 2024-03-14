@@ -1,10 +1,7 @@
 #include<stdio.h>
-
 #define MAX 50
-
 int queue[MAX];
 int front = -1, rear = -1;
-
 int enqueue(int num){
     if(rear == MAX-1)
         printf("\n Queue is full");
@@ -13,7 +10,6 @@ int enqueue(int num){
     queue[++rear] = num;
     return 0;
 }
-
 int dequeue(){
     if(front == -1 || front > rear)
         printf("\n Queue is empty");
@@ -21,7 +17,6 @@ int dequeue(){
     front++;
     return num;
 }
-
 int display(){
     if(front == -1 || front > rear)
         printf("\n Queue is empty");
@@ -31,7 +26,6 @@ int display(){
     }
     return 0;
 }
-
 int main(){
     int num, choice;
     do{
