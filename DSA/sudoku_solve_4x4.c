@@ -15,15 +15,9 @@ void display(int arr[4][4]){
 int can_insert(int arr[4][4], int row, int col, int value){
     int count = 0;
 
-    //To check if there is any number with same value is already inserted in the "row"
+    //To check if there is any number with same value is already inserted in the "row" and "column"
     for(int i=0;i<4;i++){
-        if(arr[row][i] == value)
-            count++;
-    }
-
-    //To check if there is any number with same value is already inserted in the "column"
-    for(int i=0;i<4;i++){
-        if(arr[i][col] == value)
+        if(arr[row][i] == value || arr[i][col] == value)
             count++;
     }
 
@@ -37,7 +31,6 @@ int can_insert(int arr[4][4], int row, int col, int value){
                 count++;
         }
     }
-
     return count;
 }
 
